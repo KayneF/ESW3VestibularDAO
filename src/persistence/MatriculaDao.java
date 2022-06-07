@@ -29,9 +29,15 @@ public class MatriculaDao implements IMatriculaDao<Matricula>{
     }
 
     @Override
-    public Matricula delete(Matricula matricula) {
+    public void delete(Matricula matricula) {
+        // Delete com Native Query
+        Aluno aluno = new Aluno();
+        StringBuffer buffer = new StringBuffer();
+        buffer.append("DELETE ano, semestre " );
+        buffer.append("FROM matricula ");
+        buffer.append("WHERE aluno.nome_aluno = " + aluno.getNome());
+        EntityManager entityManager = sf.createEntityManager();
 
-        return null;
     }
 
     @Override

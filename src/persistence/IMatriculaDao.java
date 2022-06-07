@@ -7,7 +7,7 @@ import java.util.List;
 public interface IMatriculaDao<T>{
 
     void insert(T matricula);
-    Matricula delete(T matricula);
+    void delete(T matricula);
     List<T> list(Matricula matricula);
 
 }
