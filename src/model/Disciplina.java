@@ -15,7 +15,7 @@ public class Disciplina {
     @NotNull
     private int CodDisc;
 
-    @Column(name = "disciplina")
+    @Column(name = "nome_disciplina")
     @NotNull
     private String nomeDisc;
 

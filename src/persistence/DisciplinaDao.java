@@ -3,14 +3,13 @@ package persistence;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityTransaction;
 import jakarta.persistence.Query;
-import model.Aluno;
 import model.Disciplina;
 import org.hibernate.SessionFactory;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class DisciplinaDao implements IAlunoMatDao<Disciplina>{
+public class DisciplinaDao implements IAlunoDiscDao<Disciplina> {
 
     private SessionFactory sf;
 

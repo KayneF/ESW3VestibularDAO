@@ -9,7 +9,7 @@ import org.hibernate.SessionFactory;
 import java.util.ArrayList;
 import java.util.List;
 
-public class AlunoDao implements IAlunoMatDao<Aluno>{
+public class AlunoDao implements IAlunoDiscDao<Aluno> {
 
     private SessionFactory sf;
 

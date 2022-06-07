@@ -20,6 +20,14 @@ public class Matricula {
     @NotNull
     private Disciplina codDisciplina;
 
+    @Column(name = "ano")
+    @NotNull
+    private int ano;
+
+    @Column(name = "semestre")
+    @NotNull
+    private int semestre;
+
     // ====================================================================
 
     public Aluno getRaAluno() {
@@ -36,5 +44,21 @@ public class Matricula {
 
     public void setCodDisciplina(Disciplina codDisciplina) {
         this.codDisciplina = codDisciplina;
+    }
+
+    public int getAno() {
+        return ano;
+    }
+
+    public void setAno(int ano) {
+        this.ano = ano;
+    }
+
+    public int getSemestre() {
+        return semestre;
+    }
+
+    public void setSemestre(int semestre) {
+        this.semestre = semestre;
     }
 }
